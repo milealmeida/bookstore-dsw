@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BookStore - Seu marketing place de livros</title>
+
+    <link rel="shortcut icon" href="/src/assets/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="/src/assets/favicon.ico" type="image/x-icon">
+
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+Tamma+2:wght@400;600;700&family=Bangers&display=swap" rel="stylesheet">
+
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+
+    <link rel="stylesheet" href="/src/styles/main.css">
+    <link rel="stylesheet" href="/src/styles/books.css">
+    <link rel="stylesheet" href="/src/styles/partials/menu.css">
+    <link rel="stylesheet" href="/src/styles/partials/footer.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <input type="checkbox" id="check">
+            <label for="check" class="checkbtn">
+                <i class="fas fa-bars"></i>
+            </label>
+            <label class="logo">BooskStore</label>
+            <ul>
+                <li><a class="active" href="index.html"><i class="fas fa-home"></i></a></li>
+                <li><a class="active"href="login.html"><i class="fas fa-sign-in-alt"></i></a></li>
+                <li><a class="active" href="products.html"><i class="fas fa-book"></i></a></li>
+                <li><a class="active" href="about.html"><i class="far fa-building"></i></a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main class="container-books">
+        <table class="table-books">
+            <thead>
+                <th>Capa</th>
+                <th>Título</th>
+                <th>Autor(a)</th>
+                <th>Sinopse</th>
+                <th>Preço</th>
+                <th>Vendedor(a)</th>
+                <th>Whatsapp</th>
+                <th>Alterar</th>
+                <th>Remover</th>
+            </thead>
+            <tbody>
+                <tr>
+                    <td data-label="Capa"><img src="/src/assets/books/cantigaDosPassaros.jpg" alt="Capa do livro"></td>
+                    <td data-label="Título">A Cantiga dos Pássaros e das Serpentes</td>
+                    <td data-label="Autor(a)">Suzanne Collins</td>
+                    <td data-label="Sinopse" id="sinopse">É a manhã do dia da colheita que iniciará a décima edição dos Jogos Vorazes. 
+                        Na Capital, o jovem de dezoito anos Coriolanus Snow se prepara para sua oportunidade
+                        de glória como um mentor dos Jogos. A outbodyora importante casa Snow passa por tempos 
+                        difíceis e o destino dela depende da pequena chance de Coriolanus ser capaz de encantar, 
+                        enganar e manipular seus colegas estudantes para conseguir mentorar o tributo vencedor.
+                        <br/>
+                        A sorte não está a favor dele. A ele foi dada a tarefa humilhante de mentorar a garota 
+                        tributo do Distrito 12, o pior dos piores. Os destinos dos dois estão agora interligados 
+                        – toda escolha que Coriolanus fizer pode significar sucesso ou fracasso, triunfo ou ruína. 
+                        Na arena, a batalha será mortal. Fora da arena, Coriolanus começa a se apegar a 
+                        já condenada garota tributo... e deverá pesar a necessidade de seguir as regras e o 
+                        desejo de sobreviver custe o que custar.</td>
+                    <td data-label="Preço">R$70,00</td>
+                    <td data-label="Vendedor">Milena</td>
+                    <td data-label="Whatsapp"><a target="_blank" class="button-icon-whatsapp" href="#"><i class="fab fa-whatsapp"></i></a></td>
+                    <td data-label="Alterar"><a class="button-icon-cogs" href="#"><i class="fas fa-cogs"></i></a></td>
+                    <td data-label="Remover"><a class="button-icon-trash" href="#"><i class="fas fa-trash"></i></a></td>
+                </tr>
+
+                <tr>
+                    <td data-label="Capa"><img src="/src/assets/books/boxPercyJackson.jpg" alt="Capa do livro"></td>
+                    <td data-label="Título">Box Percy Jackson e os Olimpianos: (Série Percy Jackson e os olimpianos)</td>
+                    <td data-label="Autor(a)">Rick Riordan</td>
+                    <td data-label="Sinopse" id="sinopse">Combinando mitologia grega e muita aventura, a saga do menino 
+                        Percy Jackson, que aos 12 anos descobre que é um semideus, filho de Poseidon, tornou-se um 
+                        fenômeno mundial. Foram mais de 15 milhões de livros vendidos em todo o mundo e quase um milhão 
+                        no Brasil, além da adaptação para o cinema que atraiu 1,8 milhão de espectadores no país.
+                        <br/>
+                        Agora, os fãs da série podem ter, reunidos em um box especial, com edição limitada e design 
+                        exclusivo, os cinco livros da saga que consagrou o autor Rick Riordan: O ladrão de raios, em 
+                        que Percy descobre sua ligação com os deuses do Olimpo e precisa impedir uma guerra entre eles, 
+                        que acabaria com toda a civilização ocidental; O Mar de Monstros, quando ele e seus amigos se 
+                        envolvem numa perigosa aventura para defender o Acampamento Meio-Sangue; A maldição do Titã, 
+                        em que nosso herói descobre que Cronos, o Senhor dos Titãs, despertou e está disposto a 
+                        destruir toda a humanidade; A batalha do Labirinto, em que Percy, Tyson, Annabeth e Grover 
+                        são destacados para combater o perigoso Titã nos corredores do temido Labirinto de Dédalo; 
+                        e O último Olimpiano, quando o confronto toma as ruas de Nova York e Percy tem de lidar não 
+                        só com o exército de Cronos, mas também com a chegada de seu 16º aniversário e, com ele, 
+                        com a profecia que determinará seu destino.</td>
+                    <td data-label="Preço">R$100,00</td>
+                    <td data-label="Vendedor">Milena</td>
+                    <td data-label="Whatsapp"><a target="_blank" class="button-icon-whatsapp" href="https://api.whatsapp.com/send?l=pt_BR&phone=55999999&text=Gostaria de comprar esse livro!"><i class="fab fa-whatsapp"></i></a></td>
+                    <td data-label="Alterar"><a class="button-icon-cogs" href="#"><i class="fas fa-cogs"></i></a></td>
+                    <td data-label="Remover"><a class="button-icon-trash" href="#"><i class="fas fa-trash"></i></a></td>
+                </tr>
+            </tbody>
+        </table>
+
+    </main>
+
+    <footer class="footer-container">
+        <p>Desenvolvimento de Sistemas Web</p>
+        <p>Universidade do Estado de Mato Grosso</p>
+        <p>Milena Almeida Andrade</p>
+    </footer>
+</body>
+</html>

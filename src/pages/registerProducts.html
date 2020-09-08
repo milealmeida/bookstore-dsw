@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BookStore - Seu marketing place de livros</title>
+
+    <link rel="shortcut icon" href="/src/assets/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="/src/assets/favicon.ico" type="image/x-icon">
+
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+Tamma+2:wght@400;600;700&family=Bangers&display=swap" rel="stylesheet">
+
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+
+    <link rel="stylesheet" href="/src/styles/main.css">
+    <link rel="stylesheet" href="/src/styles/registerBook.css">
+    <link rel="stylesheet" href="/src/styles/partials/menu.css">
+    <link rel="stylesheet" href="/src/styles/partials/form.css">
+    <link rel="stylesheet" href="/src/styles/partials/footer.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <input type="checkbox" id="check">
+            <label for="check" class="checkbtn">
+                <i class="fas fa-bars"></i>
+            </label>
+            <label class="logo">BooskStore</label>
+            <ul>
+                <li><a class="active" href="index.html"><i class="fas fa-home"></i></a></li>
+                <li><a class="active"href="login.html"><i class="fas fa-sign-in-alt"></i></a></li>
+                <li><a class="active" href="products.html"><i class="fas fa-book"></i></a></li>
+                <li><a class="active" href="about.html"><i class="far fa-building"></i></a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main class="container-register-book">
+        <div class="container-form-register">
+            <form id="formBook" action="products.html" method="POST" onsubmit="return validateFormBook(this)">
+                <fieldset>
+                    <legend>Cadastrar Livro</legend>
+                    <h2>Preencha os dados sobre o livro abaixo para começar</h2>
+
+                    <div class="input-block">
+                        <label for="book">Título do livro</label>
+                        <input type="text" name="book" required>
+                    </div>
+
+                    <div class="input-block">
+                        <label for="name_author">Nome do autor</label>
+                        <input type="text" name="name_author" required>
+                    </div>
+
+                    <div class="input-block">
+                        <label for="image">
+                            Link da capa do livro
+                            <small>(http://...)</small>
+                        </label>
+                        <input type="url" name="image" required>
+                    </div>
+
+                    <div class="textarea-block">
+                        <label for="synopsis">Sinopse do livro</label>
+                        <textarea name="synopsis" required></textarea>
+                    </div>
+
+                    <div class="input-block">
+                        <label for="price">Preço</label>
+                        <input type="number" name="price" required>
+                    </div>
+                </fieldset>
+            </form>
+
+            <div class="registerButton">
+                <button class="button-start" type="submit" form="formBook" id="button-success-book">Concluir cadastro do livro</button>
+            </div>
+        </div>
+
+        <div class="container-img-register-book">
+            <img src="/src/assets/registerBook.svg" alt="Faça seu cadastro">
+        </div>
+    </main>
+
+    <footer class="footer-container">
+        <p>Desenvolvimento de Sistemas Web</p>
+        <p>Universidade do Estado de Mato Grosso</p>
+        <p>Milena Almeida Andrade</p>
+    </footer>
+
+    <script src="/public/scripts/formValidate.js"></script>
+</body>
+</html>

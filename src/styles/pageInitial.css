@@ -1,0 +1,114 @@
+main.pageInitial{
+    width: 100vw;
+    height: 150vh;
+    background-color: var(--color-primary);
+}
+
+div.container-menu{
+    display: flex;
+    justify-content: space-between;
+    padding: 4rem;
+}
+
+div.container-menu a{
+    color: white;
+    font-size: 2rem;
+}
+
+div.container-menu a:hover{
+    font-size: 2.3rem;
+    transition: .5s;
+}
+
+div.container-pageInitial{
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+    align-items: center;
+}
+
+div.container-img-pageInitial{
+    width: 100vw;
+    height: 50vh;
+    padding: 2rem;
+}
+
+div.container-img-pageInitial img{
+    width: 90%;
+}
+
+div.info-welcome h1{
+    font-size: 5rem;
+    text-align: center;
+}
+
+div.info-welcome h2{
+    font-size: 2.5rem;
+    text-align: center;
+    color: white;
+    line-height: 3.5rem;
+    padding: 2rem;
+}
+
+div.buttons-books{
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    text-align: center;
+    padding: 2rem;
+}
+
+div.buttons-books a.icon-book{
+    background-color: var(--color-quaternary);
+    padding: 2rem;
+    font-size: 2rem;
+    color: white;
+    border-radius: 8px;
+}
+
+div.buttons-books a.icon-book:hover{
+    background-color: var(--color-quaternary-dark);
+    transition: 0.5s;
+    font-size: 2.3rem;
+}
+
+div.buttons-books a.icon-book-user{
+    background-color: var(--color-tertiary);
+    padding: 2rem;
+    font-size: 2rem;
+    color: white;
+    border-radius: 8px;
+}
+
+div.buttons-books a.icon-book-user:hover{
+    background-color: var(--color-tertiary-dark);
+    transition: 0.5s;
+    font-size: 2.3rem;
+}
+
+@media(min-width:1100px){
+    main.pageInitial{
+        height: 100vh;
+    }
+
+    div.container-menu{
+        padding: 6rem;
+    }
+
+    div.container-pageInitial{
+        grid-template-columns: 1fr 1fr;
+    }
+    
+    div.container-img-pageInitial{
+        width: 50vw;
+        height: 50vh;
+    }
+    
+    div.container-img-pageInitial img{
+        width: 100%;
+    }
+
+    div.buttons-books{
+        grid-template-columns: 1fr 1fr;
+    }
+}

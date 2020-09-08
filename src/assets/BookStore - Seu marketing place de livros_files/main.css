@@ -1,0 +1,35 @@
+:root {
+    --color-background: #F0F0F7;
+    --color-primary: #162447;
+    --color-secondary: #1f4068;
+    --color-tertiary:#1b1b2f;
+    --color-tertiary-light:#23233d;
+    --color-quaternary: #e43f5a;
+    --color-quaternary-dark: #c02f47;
+    --color-input-background: #F8F8FC;
+    font-size: 60%; 
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+html,
+body{
+    height: 100vh;
+    font-family: 'Baloo Tamma 2', cursive;
+    background-color: var(--color-background);
+    /*font-family: 'Bangers', cursive;*/
+}
+
+h1{
+    color: var(--color-quaternary);
+}
+
+h2{
+    color: var(--color-tertiary);
+}

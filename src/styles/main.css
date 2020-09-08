@@ -1,0 +1,45 @@
+:root {
+    --color-background: #F0F0F7;
+    --color-primary: #162447;
+    --color-secondary: #1f4068;
+    --color-tertiary:#1b1b2f;
+    --color-tertiary-dark:#141424;
+    --color-quaternary: #e43f5a;
+    --color-quaternary-dark: #c02f47;
+    --color-text: #2c2c2c;
+    --color-input-background: #F8F8FC;
+    --color-table-th-background: #d3d3d3;
+    --color-table-td-background: #f8f8f8;
+    --color-table-tr-background: #c6c6c6;
+    --color-icon-whatsapp: #25d366;
+    --color-icon-whatsapp-dark: #075e54;
+    --color-icon-cogs: #e8e82d;
+    --color-icon-cogs-dark: #f2f200;
+    --color-icon-trash: #ff574d;
+    --color-icon-trash-dark: #ff6347;
+    font-size: 60%; 
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+html,
+body{
+    height: 100vh;
+    font-family: 'Baloo Tamma 2', cursive;
+    background-color: var(--color-background);
+    color: var(--color-text);
+}
+
+h1{
+    color: var(--color-quaternary);
+}
+
+h2{
+    color: var(--color-tertiary);
+}

@@ -1,0 +1,120 @@
+fieldset{
+    border: none;
+    padding: 0 3.5rem;
+}
+
+fieldset legend{
+    color: var(--color-tertiary);
+    font-size: 5rem;
+    padding: 10rem 0 0;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    line-height: 5rem;
+    margin-bottom: 1rem;
+}
+
+div.container-form-register h2{
+    font-size: 2rem;
+    line-height: 2rem;
+    margin-bottom: 1.5rem;
+}
+
+div.input-block label,
+div.textarea-block label{
+    font-size: 1.8rem;
+}
+
+div.input-block input,
+div.textarea-block textarea{
+    width: 100%;
+    height: 5.6rem;
+    margin-top: 0.8rem;
+    border-radius: 0.8rem;
+    background: var(--color-input-background);
+    border: 1px solid var(--color-tertiary);
+    outline: 0;
+    padding: 0 1.6rem;
+}
+
+div.textarea-block textarea{
+    padding: 1.2rem 1.6rem;
+    height: 16rem;
+    resize: vertical;
+}
+
+div.input-block,
+div.textarea-block{
+    position: relative;
+}
+
+div.input-block:focus-within::after{
+    content: "";
+    width: calc(100% - 3.2rem);
+    height: 2px;
+    background: var(--color-tertiary);
+    position: absolute;
+    left: 1.6rem;
+    right: 1.6rem;
+    bottom: 0;
+}
+
+div.textarea-block:focus-within::after{
+    content: "";
+    width: calc(100% - 3.2rem);
+    height: 2px;
+    background: var(--color-tertiary);
+    position: absolute;
+    left: 1.6rem;
+    right: 1.6rem;
+    bottom: 0.7rem;
+}
+
+.button-start{
+    width: 100%;
+    height: 8rem;
+    border: none;
+    cursor: pointer;
+    border-radius: .8rem;
+    margin-right: 1.6rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background 0.2s;
+    color: white;
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    background-color: var(--color-quaternary);
+}
+
+.button-start:hover{
+    background-color: var(--color-quaternary-dark);
+    transition: .5s;
+    color: white;
+}
+
+@media(min-width:1100px){
+    div.container-form fieldset{
+        width: 100%;
+        margin-left: 10%;
+    }
+
+    fieldset legend{
+        padding-top: 0;
+    }
+
+    .button-start{
+        width: 40%;
+        height: 6rem;
+    }
+
+    #button-success{
+        width: 50%;
+        height: 6rem;
+    }
+
+    #button-success-book{
+        width: 60%;
+        height: 6rem;
+    }
+}
