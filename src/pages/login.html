@@ -1,80 +1,35 @@
-<!DOCTYPE html>
-<html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>BookStore - Seu marketing place de livros</title>
+<main class="container-login">
+    <div class="container-form">
+        <form>
+            <fieldset>
+                <legend>Fazer Login</legend>
 
-    <link rel="shortcut icon" href="/src/assets/favicon.ico" type="image/x-icon">
-    <link rel="icon" href="/src/assets/favicon.ico" type="image/x-icon">
-
-    <link href="https://fonts.googleapis.com/css2?family=Baloo+Tamma+2:wght@400;600;700&family=Bangers&display=swap" rel="stylesheet">
-
-    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
-
-    <link rel="stylesheet" href="/src/styles/main.css">
-    <link rel="stylesheet" href="/src/styles/login.css">
-    <link rel="stylesheet" href="/src/styles/partials/menu.css">
-    <link rel="stylesheet" href="/src/styles/partials/form.css">
-    <link rel="stylesheet" href="/src/styles/partials/footer.css">
-</head>
-<body>
-    <header>
-        <nav>
-            <input type="checkbox" id="check">
-            <label for="check" class="checkbtn">
-                <i class="fas fa-bars"></i>
-            </label>
-            <label class="logo">BooskStore</label>
-            <ul>
-                <li><a class="active" href="index.html"><i class="fas fa-home"></i></a></li>
-                <li><a class="active"href="login.html"><i class="fas fa-sign-in-alt"></i></a></li>
-                <li><a class="active" href="products.html"><i class="fas fa-book"></i></a></li>
-                <li><a class="active" href="about.html"><i class="far fa-building"></i></a></li>
-            </ul>
-        </nav>
-    </header>
-    
-    <main class="container-login">
-        <div class="container-form">
-            <form>
-                <fieldset>
-                    <legend>Fazer Login</legend>
-    
-                    <div class="input-block">
-                        <label for="email">Email</label>
-                        <input type="email" required>
-                    </div>
-    
-                    <div class="input-block">
-                        <label for="password">Senha</label>
-                        <input type="password" required>
-                    </div>
-    
-                    <div class="loginButton">
-                        <a class="button-start" href="registerProducts.html">Entrar</a>
-                    </div>
-                </fieldset>
-            </form>
-    
-            <div class="container-register">
-                <div class="box-register">
-                    <p>Não tem conta?</p>
-                    <a href="registerUser.html">Cadastre-se</a>
+                <div class="input-block">
+                    <label for="email">Email</label>
+                    <input type="email" required>
                 </div>
-                <p>É de graça S2</p>
+
+                <div class="input-block">
+                    <label for="password">Senha</label>
+                    <input type="password" required>
+                </div>
+
+                <div class="loginButton">
+                    <a class="button-start" onclick="carrega('registerProducts.html')">Entrar</a>
+                </div>
+            </fieldset>
+        </form>
+
+        <div class="container-register">
+            <div class="box-register">
+                <p>Não tem conta?</p>
+                <a onclick="carrega('registerUser.html')">Cadastre-se</a>
             </div>
+            <p>É de graça S2</p>
         </div>
+    </div>
 
-        <div class="container-img-login">
-            <img src="/src/assets/login.svg" alt="Login seguro">
-        </div>
-    </main>
-
-    <footer class="footer-container">
-        <p>Desenvolvimento de Sistemas Web</p>
-        <p>Universidade do Estado de Mato Grosso</p>
-        <p>Milena Almeida Andrade</p>
-    </footer>
-</body>
-</html>
+    <div class="container-img-login">
+        <img src="/src/assets/login.svg" alt="Login seguro">
+    </div>
+</main>

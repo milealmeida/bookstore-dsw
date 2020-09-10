@@ -43,3 +43,7 @@ h1{
 h2{
     color: var(--color-tertiary);
 }
+
+a{
+    cursor: pointer;
+}
